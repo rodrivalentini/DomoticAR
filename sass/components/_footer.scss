@@ -1,0 +1,181 @@
+@use 'sass:color';
+@use '../utilities/variables' as *;
+
+.site-footer {
+  background-color: $bg-primary;
+  border-top: 1px solid rgba($accent-blue, 0.15);
+  padding: 60px 0 0;
+  color: $text-secondary;
+  font-size: 0.875rem;
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;   // ← mobile base: una columna
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer-brand {
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: $font-main;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: $text-primary;
+      text-decoration: none;
+      margin-bottom: 1rem;
+
+      .brand-icon {
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(135deg, $accent-blue, $accent-cyan);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .brand-ar {
+        color: $accent-cyan;
+      }
+    }
+
+    .footer-desc {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: $text-secondary;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid rgba($accent-blue, 0.2);
+    background: $bg-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-secondary;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: $accent-cyan;
+      color: $accent-cyan;
+      background: rgba($accent-cyan, 0.1);
+    }
+  }
+
+  .footer-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $text-primary;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    a {
+      color: $text-secondary;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease, gap 0.2s ease;
+
+      &::before {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: $accent-blue;
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      &:hover {
+        color: $accent-cyan;
+        gap: 10px;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .footer-contact {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    p {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      color: $text-secondary;
+      margin: 0;
+
+      i {
+        color: $accent-cyan;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba($accent-blue, 0.1);
+    padding: 1.25rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    p {
+      font-size: 0.8rem;
+      color: $text-secondary;
+      margin: 0;
+    }
+
+    .footer-status {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: $success;
+    }
+
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $success;
+      animation: pulse 2s infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}

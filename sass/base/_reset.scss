@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  background-color: $bg-primary;
+  color: $text-primary;
+}

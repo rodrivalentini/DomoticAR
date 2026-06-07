@@ -1,0 +1,30 @@
+// styles.scss
+
+// 1. utilities primero (variables, mixins, extends)
+@use 'utilities/variables' as *;
+@use 'utilities/mixins' as *;
+@use 'utilities/extends' as *;
+
+// 2. Base
+@use 'base/reset';
+@use 'base/typography';
+
+// 3. Components
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/footer';
+
+// 4. Layout
+@use 'layout/hero';
+@use 'layout/grid';
+@use 'layout/sections';
+@use 'layout/mq-tablet';   
+@use 'layout/mq-desktop'; 
+
+// 5. Pages
+@use 'pages/home';
+@use 'pages/soluciones';
+@use 'pages/tecnologia';
+@use 'pages/proyectos';
+@use 'pages/contacto';

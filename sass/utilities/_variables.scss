@@ -1,0 +1,31 @@
+// utilities/_variables.scss
+
+// Colores
+$bg-primary:     #0D0F14;
+$bg-secondary:   #161B27;
+$accent-blue:    #3B82F6;
+$accent-cyan:    #06B6D4;
+$text-primary:   #F1F5F9;
+$text-secondary: #94A3B8;
+$success:        #22C55E;
+
+// Gradiente hero
+$gradient-hero:  linear-gradient(135deg, #0EA5E9 0%, #06B6D4 50%, #3B82F6 100%);
+
+// Tipografía
+$font-main:       'Poppins', sans-serif;
+$font-size-base:  16px;
+$font-hero-size:  clamp(3rem, 8vw, 6rem);
+$font-hero-weight: 800;
+
+// Breakpoints
+$bp-mobile:  576px;
+$bp-tablet:  768px;
+$bp-desktop: 1024px;
+$bp-wide:    1280px;
+
+// Espaciado
+$spacing-sm:  8px;
+$spacing-md:  16px;
+$spacing-lg:  32px;
+$spacing-xl:  64px;

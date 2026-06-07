@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+body {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-main;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+p {
+  line-height: 1.7;
+  color: $text-secondary;
+}
+
+a {
+  color: $accent-cyan;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent-blue;
+  }
+}

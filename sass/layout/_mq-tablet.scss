@@ -1,0 +1,27 @@
+@use '../utilities/variables' as *;
+
+@media (min-width: 768px) {
+  .navbar {
+    .navbar-collapse {
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+      border-top: none;
+      border-radius: 0;
+    }
+  }
+
+  .site-footer {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+}

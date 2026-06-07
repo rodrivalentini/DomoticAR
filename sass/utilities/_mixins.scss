@@ -1,0 +1,21 @@
+// utilities/_mixins.scss
+
+@use 'variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-base {
+  background: $bg-secondary;
+  border-radius: 12px;
+  border: 1px solid rgba($accent-blue, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba($accent-blue, 0.3);
+  }
+}

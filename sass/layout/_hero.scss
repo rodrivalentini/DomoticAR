@@ -1,0 +1,275 @@
+// layout/_hero.scss
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.hero {
+  background: $gradient-hero;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  padding: $spacing-xl 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  // Grid principal
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $bp-tablet) {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+
+  // Badge superior
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1.5rem;
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $success;
+      animation: pulse 2s infinite;
+      flex-shrink: 0;
+    }
+  }
+
+  // Título
+  .hero-title {
+    font-size: $font-hero-size;
+    font-weight: $font-hero-weight;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+
+    .hero-title-alt {
+      display: block;
+      color: rgba(255,255,255,0.75);
+    }
+  }
+
+  // Descripción
+  .hero-desc {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 480px;
+  }
+
+  // Botones
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-hero-primary {
+    background: white;
+    color: #0EA5E9;
+    border: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      color: #0EA5E9;
+    }
+  }
+
+  .btn-hero-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 0.875rem 1.75rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: white;
+      color: white;
+    }
+  }
+
+  // Stats
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    display: flex;
+    flex-direction: column;
+
+    .hero-stat-number {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: white;
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 4px;
+    }
+  }
+
+  // Panel de dispositivos
+  .device-panel {
+    background: rgba(13,15,20,0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 1.5rem;
+    backdrop-filter: blur(20px);
+  }
+
+  .device-panel-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    .device-panel-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, $accent-blue, $accent-cyan);
+      border-radius: 9px;
+      @include flex-center;
+      color: white;
+      font-size: 1.1rem;
+    }
+
+    .device-panel-title {
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .device-panel-sub {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.75rem;
+      margin: 0;
+    }
+  }
+
+  .device-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .device-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .device-icon {
+      font-size: 1.4rem;
+      color: $accent-cyan;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .device-name {
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 0 0 2px;
+    }
+
+    .device-status {
+      color: rgba(255,255,255,0.45);
+      font-size: 0.7rem;
+      margin: 0;
+
+      &.active {
+        color: $success;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.device-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.device-toggle {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+
+  &.on  { background: $success; }
+  &.off { background: rgba(255,255,255,0.2); }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    transition: left 0.3s ease;
+  }
+
+  &.on::after  { left: 19px; }
+  &.off::after { left: 3px; }
+}
