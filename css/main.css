@@ -149,15 +149,6 @@ a:hover {
   text-decoration: none;
   margin-bottom: 1rem;
 }
-.site-footer .footer-brand .footer-logo .brand-icon {
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(135deg, #3B82F6, #06B6D4);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .site-footer .footer-brand .footer-logo .brand-ar {
   color: #06B6D4;
 }
