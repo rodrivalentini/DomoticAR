@@ -3,15 +3,15 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
- .proj-section {
-   padding: $spacing-xl 0;
+.proj-section {
+  padding: $spacing-xl 0;
+}
 
-   .proj-grid {
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-     gap: 1.5rem;
-   }
- }
+.proj-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 
 // Cards
 .proj-card {

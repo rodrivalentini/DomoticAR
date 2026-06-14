@@ -1,15 +1,18 @@
 @use '../utilities/variables' as *;
+@use '../pages/proyectos' as *;
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
 
-  // navbar
   .navbar {
     .nav-link {
       font-size: 0.9rem;
     }
   }
 
-  // footer
+  .proj-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .site-footer {
     .footer-grid {
       grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -20,9 +23,5 @@
     .footer-brand {
       grid-column: auto;
     }
-  }
-
-  .proj-grid {
-    grid-template-columns: repeat(3, 1fr);  // ← era 1fr, tiene que ser 3 columnas
   }
 }
