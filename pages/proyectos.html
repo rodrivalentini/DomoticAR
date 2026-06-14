@@ -1,68 +1,603 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Proyectos de domótica realizados por DomoticAR en hogares y empresas de Argentina."
+    />
+    <meta
+      name="keywords"
+      content="proyectos domótica, automatización hogar Argentina, smart home casos reales"
+    />
+    <meta name="author" content="DomoticAR" />
+    <meta property="og:title" content="Proyectos - DomoticAR" />
+    <meta
+      property="og:description"
+      content="Casos reales de automatización inteligente en Argentina."
+    />
+    <meta property="og:type" content="website" />
     <title>Proyectos - DomoticAR</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Tus estilos (siempre DESPUÉS de Bootstrap para poder pisarlo) -->
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg" id="mainNav">
-            <div class="container">
-
-            <a class="navbar-brand" href="../index.html">
-                <span class="brand-icon">
-                <img src="../assets/icons/logo.png" alt="">
-                </span>
-                Domotic<span class="brand-ar">AR</span>
-            </a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMain"
-                aria-controls="navbarMain"
-                aria-expanded="false"
-                aria-label="Abrir menú de navegación"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/soluciones.html">Soluciones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/tecnologia.html">Tecnología</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-cta" href="../pages/contacto.html">Contacto</a>
-                </li>
-                </ul>
-            </div>
-
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <span class="brand-icon">
+              <img
+                src="../assets/icons/logo.png"
+                alt=""
+                aria-hidden="true"
+                width="28"
+                height="28"
+              />
+            </span>
+            Domotic<span class="brand-ar">AR</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMain"
+            aria-controls="navbarMain"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soluciones.html">Soluciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tecnologia.html">Tecnología</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="proyectos.html"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-cta" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-content" data-aos="fade-up">
+            <span class="page-hero-label">Casos reales</span>
+            <h1 class="page-hero-title">Nuestros Proyectos</h1>
+            <p class="page-hero-desc">
+              Cada instalación es única. Conocé algunos de los hogares y
+              empresas que ya automatizamos en Argentina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+<!-- PROYECTOS -->
+<section class="proj-section" id="proyectos">
+  <div class="container">
+    <div class="proj-grid">
+
+      <!-- Proyecto 1 -->
+      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto1" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-img-wrapper">
+          <img src="../assets/img/Cordoba.png" alt="Casa inteligente en Córdoba Norte automatizada por DomoticAR" class="proj-img" loading="lazy" width="600" height="400"/>
+          <div class="proj-img-overlay"><span>Ver detalle <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Iluminación</span>
+            <span class="proj-tag">Seguridad</span>
+          </div>
+          <h2 class="proj-title">Casa inteligente — Córdoba Norte</h2>
+          <p class="proj-desc">Automatización completa de 3 ambientes con control de luces, seguridad y climatización integrada.</p>
+          <div class="proj-meta">
+            <span class="proj-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Córdoba, AR</span>
+            <span class="proj-year">2024</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 2 -->
+      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto2" data-aos="fade-up" data-aos-delay="100">
+        <div class="proj-img-wrapper">
+          <img src="../assets/img/BsAs.png" alt="Oficinas corporativas en Buenos Aires con sistema domótico empresarial" class="proj-img" loading="lazy" width="600" height="400"/>
+          <div class="proj-img-overlay"><span>Ver detalle <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Empresarial</span>
+            <span class="proj-tag">Energía</span>
+          </div>
+          <h2 class="proj-title">Oficinas corporativas — Buenos Aires</h2>
+          <p class="proj-desc">Sistema de gestión energética y control de accesos para 4 pisos con 80 empleados.</p>
+          <div class="proj-meta">
+            <span class="proj-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Buenos Aires, AR</span>
+            <span class="proj-year">2024</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 3 -->
+      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto3" data-aos="fade-up" data-aos-delay="200">
+        <div class="proj-img-wrapper">
+          <img src="../assets/img/Mendoza.png" alt="Apart hotel en Mendoza con automatización de habitaciones" class="proj-img" loading="lazy" width="600" height="400"/>
+          <div class="proj-img-overlay"><span>Ver detalle <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Climatización</span>
+            <span class="proj-tag">Entretenimiento</span>
+          </div>
+          <h2 class="proj-title">Apart hotel — Mendoza</h2>
+          <p class="proj-desc">Automatización de 12 habitaciones con climatización, iluminación escénica y entretenimiento.</p>
+          <div class="proj-meta">
+            <span class="proj-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Mendoza, AR</span>
+            <span class="proj-year">2023</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Proyecto 4 -->
+      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto4" data-aos="fade-up" data-aos-delay="0">
+        <div class="proj-img-wrapper">
+          <img src="../assets/img/empresa.png" alt="Automatización industrial en Rosario por DomoticAR" class="proj-img" loading="lazy" width="600" height="400"/>
+          <div class="proj-img-overlay"><span>Ver detalle <i class="bi bi-arrow-right"></i></span></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags">
+            <span class="proj-tag">Industrial</span>
+            <span class="proj-tag">Accesos</span>
+          </div>
+          <h2 class="proj-title">Planta industrial — Rosario</h2>
+          <p class="proj-desc">Control de accesos, monitoreo de consumo energético y automatización de sectores productivos en tiempo real.</p>
+          <div class="proj-meta">
+            <span class="proj-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Rosario, AR</span>
+            <span class="proj-year">2025</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+      <!-- MODAL PROYECTO 1 -->
+      <div
+        class="modal fade"
+        id="modalProyecto1"
+        tabindex="-1"
+        aria-labelledby="modalProyecto1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content proj-modal-content">
+            <div class="modal-header proj-modal-header">
+              <h2 class="modal-title proj-modal-title" id="modalProyecto1Label">
+                Casa inteligente — Córdoba Norte
+              </h2>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body proj-modal-body">
+              <img
+                src="../assets/img/Cordoba.png"
+                alt="Casa inteligente Córdoba Norte"
+                class="proj-modal-img"
+                loading="lazy"
+              />
+              <div class="proj-modal-tags">
+                <span class="proj-tag">Iluminación</span>
+                <span class="proj-tag">Seguridad</span>
+                <span class="proj-tag">Climatización</span>
+              </div>
+              <p class="proj-modal-desc">
+                Automatización completa de una vivienda de 3 ambientes en
+                Córdoba Norte. Control de luces por zonas con Zigbee, sistema de
+                seguridad con cámaras IP y sensores de movimiento, y
+                climatización programable integrada en Home Assistant.
+              </p>
+              <div class="proj-modal-details">
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Córdoba, Argentina</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Año</span>
+                  <span class="detail-value">2024</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Tecnología</span>
+                  <span class="detail-value">Zigbee · Home Assistant</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Superficie</span>
+                  <span class="detail-value">180 m²</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer proj-modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary-custom"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="contacto.html" class="btn btn-primary-custom"
+                >Quiero algo similar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL PROYECTO 2 -->
+      <div
+        class="modal fade"
+        id="modalProyecto2"
+        tabindex="-1"
+        aria-labelledby="modalProyecto2Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content proj-modal-content">
+            <div class="modal-header proj-modal-header">
+              <h2 class="modal-title proj-modal-title" id="modalProyecto2Label">
+                Oficinas corporativas — Buenos Aires
+              </h2>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body proj-modal-body">
+              <img
+                src="../assets/img/BsAs.png"
+                alt="Oficinas corporativas Buenos Aires"
+                class="proj-modal-img"
+                loading="lazy"
+              />
+              <div class="proj-modal-tags">
+                <span class="proj-tag">Empresarial</span>
+                <span class="proj-tag">Energía</span>
+                <span class="proj-tag">Accesos</span>
+              </div>
+              <p class="proj-modal-desc">
+                Sistema de gestión energética y control de accesos para 4 pisos
+                de oficinas con 80 empleados. Reducción del 35% en consumo
+                eléctrico y control centralizado desde dashboard web con
+                reporting detallado.
+              </p>
+              <div class="proj-modal-details">
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Buenos Aires, Argentina</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Año</span>
+                  <span class="detail-value">2024</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Tecnología</span>
+                  <span class="detail-value">BACnet · MQTT</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Superficie</span>
+                  <span class="detail-value">2.400 m²</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer proj-modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary-custom"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="contacto.html" class="btn btn-primary-custom"
+                >Quiero algo similar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL PROYECTO 3 -->
+      <div
+        class="modal fade"
+        id="modalProyecto3"
+        tabindex="-1"
+        aria-labelledby="modalProyecto3Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content proj-modal-content">
+            <div class="modal-header proj-modal-header">
+              <h2 class="modal-title proj-modal-title" id="modalProyecto3Label">
+                Apart hotel — Mendoza
+              </h2>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body proj-modal-body">
+              <img
+                src="../assets/img/Mendoza.png"
+                alt="Apart hotel Mendoza automatización habitaciones"
+                class="proj-modal-img"
+                loading="lazy"
+              />
+              <div class="proj-modal-tags">
+                <span class="proj-tag">Climatización</span>
+                <span class="proj-tag">Entretenimiento</span>
+                <span class="proj-tag">Iluminación</span>
+              </div>
+              <p class="proj-modal-desc">
+                Automatización de 12 habitaciones con control individual de
+                climatización, iluminación escénica y sistema de
+                entretenimiento. Check-in digital y llaves virtuales vía app
+                para los huéspedes.
+              </p>
+              <div class="proj-modal-details">
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Mendoza, Argentina</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Año</span>
+                  <span class="detail-value">2023</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Tecnología</span>
+                  <span class="detail-value">Z-Wave · KNX</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Superficie</span>
+                  <span class="detail-value">650 m²</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer proj-modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary-custom"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="contacto.html" class="btn btn-primary-custom"
+                >Quiero algo similar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL PROYECTO 4 -->
+      <div
+        class="modal fade"
+        id="modalProyecto4"
+        tabindex="-1"
+        aria-labelledby="modalProyecto4Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content proj-modal-content">
+            <div class="modal-header proj-modal-header">
+              <h2 class="modal-title proj-modal-title" id="modalProyecto4Label">
+                Planta industrial — Rosario
+              </h2>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+            <div class="modal-body proj-modal-body">
+              <img
+                src="../assets/img/empresa.png"
+                alt="Planta industrial Rosario automatización"
+                class="proj-modal-img"
+                loading="lazy"
+              />
+              <div class="proj-modal-tags">
+                <span class="proj-tag">Industrial</span>
+                <span class="proj-tag">Accesos</span>
+                <span class="proj-tag">Energía</span>
+              </div>
+              <p class="proj-modal-desc">
+                Implementación de sistema de control de accesos biométrico,
+                monitoreo de consumo energético por sector y automatización de
+                iluminación en zonas productivas. Integración con sistema ERP
+                existente para reporting centralizado.
+              </p>
+              <div class="proj-modal-details">
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Ubicación</span>
+                  <span class="detail-value">Rosario, Argentina</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Año</span>
+                  <span class="detail-value">2025</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Tecnología</span>
+                  <span class="detail-value">Modbus · BACnet</span>
+                </div>
+                <div class="proj-modal-detail">
+                  <span class="detail-label">Superficie</span>
+                  <span class="detail-value">5.000 m²</span>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer proj-modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary-custom"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <a href="contacto.html" class="btn btn-primary-custom"
+                >Quiero algo similar</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="footer-logo" href="../index.html">
+              <span class="brand-icon">
+                <img
+                  src="../assets/icons/logo.png"
+                  alt=""
+                  aria-hidden="true"
+                  width="26"
+                  height="26"
+                />
+              </span>
+              Domotic<span class="brand-ar">AR</span>
+            </a>
+            <p class="footer-desc">
+              Soluciones de domótica inteligente para hogares y empresas en
+              Argentina.
+            </p>
+            <div class="social-links">
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a
+                href="#"
+                class="social-link"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+              <a
+                href="#"
+                class="social-link"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="soluciones.html">Soluciones</a></li>
+              <li><a href="tecnologia.html">Tecnología</a></li>
+              <li><a href="proyectos.html">Proyectos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Soluciones</h4>
+            <ul class="footer-links">
+              <li><a href="soluciones.html">Iluminación</a></li>
+              <li><a href="soluciones.html">Seguridad</a></li>
+              <li><a href="soluciones.html">Climatización</a></li>
+              <li><a href="soluciones.html">Accesos</a></li>
+              <li><a href="soluciones.html">Energía</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-heading">Contacto</h4>
+            <address class="footer-contact">
+              <p>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i> Córdoba,
+                Argentina
+              </p>
+              <p>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                info@domoticAR.com
+              </p>
+              <p>
+                <i class="bi bi-telephone" aria-hidden="true"></i> +54 351
+                000-0000
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 DomoticAR &middot; Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 600, once: true });
+    </script>
+  </body>
 </html>

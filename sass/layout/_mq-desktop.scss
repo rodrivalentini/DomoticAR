@@ -9,7 +9,7 @@
     }
   }
 
-    // footer
+  // footer
   .site-footer {
     .footer-grid {
       grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -18,8 +18,11 @@
     }
 
     .footer-brand {
-      grid-column: auto;   // ← resetea el span de tablet
+      grid-column: auto;
     }
   }
 
+  .proj-grid {
+    grid-template-columns: repeat(3, 1fr);  // ← era 1fr, tiene que ser 3 columnas
+  }
 }

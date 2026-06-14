@@ -14,7 +14,6 @@
       border-radius: 0;
     }
   }
-
   .site-footer {
     .footer-grid {
       grid-template-columns: 1fr 1fr;
@@ -23,5 +22,8 @@
     .footer-brand {
       grid-column: 1 / -1;
     }
+  }
+  .proj-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
