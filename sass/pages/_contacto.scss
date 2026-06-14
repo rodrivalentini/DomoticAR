@@ -1,0 +1,209 @@
+// pages/_contacto.scss
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.contact-section {
+  padding: $spacing-xl 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+// Info lateral
+.contact-info-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: .5rem;
+}
+
+.contact-info-desc {
+  color: $text-secondary;
+  font-size: .875rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+
+  .info-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba($accent-blue, 0.1);
+    border: 1px solid rgba($accent-blue, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent-cyan;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .info-label {
+    font-size: .7rem;
+    color: $text-secondary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .info-value {
+    font-size: .875rem;
+    color: $text-primary;
+    font-weight: 500;
+    margin: 0;
+
+    a {
+      color: $text-primary;
+      text-decoration: none;
+      transition: color .2s ease;
+
+      &:hover {
+        color: $accent-cyan;
+      }
+    }
+  }
+}
+
+.contact-map {
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba($accent-blue, 0.15);
+}
+
+// Formulario
+.contact-form-wrapper {
+  background: $bg-secondary;
+  border: 1px solid rgba($accent-blue, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.form-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: .8rem;
+    font-weight: 500;
+    color: $text-primary;
+
+    span {
+      color: $accent-cyan;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba($accent-blue, 0.2);
+    border-radius: 10px;
+    padding: .75rem 1rem;
+    color: $text-primary;
+    font-family: $font-main;
+    font-size: .875rem;
+    transition: border-color .2s ease, box-shadow .2s ease;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      color: $text-secondary;
+    }
+
+    &:focus {
+      border-color: $accent-cyan;
+      box-shadow: 0 0 0 3px rgba($accent-cyan, 0.1);
+    }
+  }
+
+  select {
+    cursor: pointer;
+
+    option {
+      background: $bg-secondary;
+      color: $text-primary;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+}
+
+.btn-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #0EA5E9, $accent-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: .875rem;
+  font-family: $font-main;
+  font-size: .95rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity .2s ease, transform .2s ease;
+  margin-top: .5rem;
+
+  &:hover {
+    opacity: .9;
+    transform: translateY(-1px);
+  }
+}
+
+.form-success {
+  display: none;
+  background: rgba($success, 0.1);
+  border: 1px solid rgba($success, 0.3);
+  border-radius: 10px;
+  padding: 1rem;
+  color: $success;
+  font-size: .875rem;
+  text-align: center;
+  margin-top: 1rem;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  &.show {
+    display: flex;
+  }
+}
