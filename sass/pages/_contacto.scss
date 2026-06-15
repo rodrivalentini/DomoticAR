@@ -1,6 +1,6 @@
 // pages/_contacto.scss
-@use '../utilities/variables' as *;
-@use '../utilities/mixins' as *;
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .contact-section {
   padding: $spacing-xl 0;
@@ -22,12 +22,12 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: $text-primary;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .contact-info-desc {
   color: $text-secondary;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -53,7 +53,7 @@
   }
 
   .info-label {
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: $text-secondary;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -61,7 +61,7 @@
   }
 
   .info-value {
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: $text-primary;
     font-weight: 500;
     margin: 0;
@@ -69,7 +69,7 @@
     a {
       color: $text-primary;
       text-decoration: none;
-      transition: color .2s ease;
+      transition: color 0.2s ease;
 
       &:hover {
         color: $accent-cyan;
@@ -117,7 +117,7 @@
   margin-bottom: 1rem;
 
   label {
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: $text-primary;
 
@@ -129,14 +129,16 @@
   input,
   select,
   textarea {
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba($accent-blue, 0.2);
     border-radius: 10px;
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
     color: $text-primary;
     font-family: $font-main;
-    font-size: .875rem;
-    transition: border-color .2s ease, box-shadow .2s ease;
+    font-size: 0.875rem;
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
     outline: none;
     width: 100%;
 
@@ -167,24 +169,26 @@
 
 .btn-submit {
   width: 100%;
-  background: linear-gradient(135deg, #0EA5E9, $accent-blue);
+  background: linear-gradient(135deg, #0ea5e9, $accent-blue);
   color: white;
   border: none;
   border-radius: 10px;
-  padding: .875rem;
+  padding: 0.875rem;
   font-family: $font-main;
-  font-size: .95rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  transition: opacity .2s ease, transform .2s ease;
-  margin-top: .5rem;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  margin-top: 0.5rem;
 
   &:hover {
-    opacity: .9;
+    opacity: 0.9;
     transform: translateY(-1px);
   }
 }
@@ -196,7 +200,7 @@
   border-radius: 10px;
   padding: 1rem;
   color: $success;
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-align: center;
   margin-top: 1rem;
   gap: 8px;

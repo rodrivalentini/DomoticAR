@@ -146,9 +146,12 @@ a:hover {
 }
 .site-footer .footer-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
+}
+.site-footer .footer-brand {
+  grid-column: 1/-1;
 }
 .site-footer .footer-brand .brand-icon {
   width: 40px;
@@ -784,17 +787,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .navbar .navbar-collapse {
-    position: static;
-    top: auto;
-    left: auto;
-    right: auto;
-    width: auto;
-    background-color: transparent;
-    padding: 0;
-    border-top: none;
-    border-radius: 0;
-  }
   .proj-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1325,7 +1317,7 @@ a:hover {
 
 .btn-submit {
   width: 100%;
-  background: linear-gradient(135deg, #0EA5E9, #3B82F6);
+  background: linear-gradient(135deg, #0ea5e9, #3B82F6);
   color: white;
   border: none;
   border-radius: 10px;

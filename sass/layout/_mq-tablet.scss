@@ -1,20 +1,8 @@
 @use '../utilities/variables' as *;
 @use '../pages/proyectos' as *;
+@use '../components/navbar' as *;
 
 @media (min-width: 768px) {
-  .navbar {
-    .navbar-collapse {
-      position: static;
-      top: auto;
-      left: auto;
-      right: auto;
-      width: auto;
-      background-color: transparent;
-      padding: 0;
-      border-top: none;
-      border-radius: 0;
-    }
-  }
   .proj-grid {
     grid-template-columns: repeat(2, 1fr);
   }
