@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg" id="mainNav">
             <div class="container">
@@ -30,8 +29,7 @@
                     </span>
                     Domotic<span class="brand-ar">AR</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-                    aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Abrir menú de navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMain">
@@ -46,9 +44,7 @@
             </div>
         </nav>
     </header>
-
     <main>
-
         <!-- PAGE HERO -->
         <section class="page-hero">
             <div class="container">
@@ -61,20 +57,16 @@
                 </div>
             </div>
         </section>
-
         <!-- CONTACTO -->
         <section class="contact-section" id="contacto">
             <div class="container">
                 <div class="contact-grid">
-
                     <!-- Info -->
                     <div class="contact-info" data-aos="fade-right">
                         <h2 class="contact-info-title">Hablemos de tu proyecto</h2>
                         <p class="contact-info-desc">
-                            Nos especializamos en soluciones domóticas a medida. Completá el formulario
-                            y un especialista se va a comunicar con vos.
+                            Nos especializamos en soluciones domóticas a medida. Completá el formulario y un especialista se va a comunicar con vos.
                         </p>
-
                         <div class="info-item">
                             <div class="info-icon">
                                 <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
@@ -84,7 +76,6 @@
                                 <p class="info-value">Córdoba, Argentina</p>
                             </div>
                         </div>
-
                         <div class="info-item">
                             <div class="info-icon">
                                 <i class="bi bi-envelope-fill" aria-hidden="true"></i>
@@ -96,7 +87,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="info-item">
                             <div class="info-icon">
                                 <i class="bi bi-telephone-fill" aria-hidden="true"></i>
@@ -108,7 +98,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="info-item">
                             <div class="info-icon">
                                 <i class="bi bi-clock-fill" aria-hidden="true"></i>
@@ -118,7 +107,6 @@
                                 <p class="info-value">Lun–Vie · 9:00 a 18:00</p>
                             </div>
                         </div>
-
                         <!-- Mapa embebido -->
                         <div class="contact-map">
                             <iframe
@@ -129,65 +117,32 @@
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
-                                title="Ubicación DomoticAR en Córdoba, Argentina"
-                            ></iframe>
+                                title="Ubicación DomoticAR en Córdoba, Argentina">
+                            </iframe>
                         </div>
                     </div>
-
                     <!-- Formulario -->
                     <div class="contact-form-wrapper" data-aos="fade-left">
                         <h2 class="form-title">Envianos tu consulta</h2>
-
                         <form class="contact-form" id="contactForm" novalidate>
-
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
-                                    <input
-                                        type="text"
-                                        id="nombre"
-                                        name="nombre"
-                                        placeholder="Tu nombre"
-                                        required
-                                        autocomplete="given-name"
-                                    >
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="given-name">
                                 </div>
                                 <div class="form-group">
                                     <label for="apellido">Apellido <span aria-hidden="true">*</span></label>
-                                    <input
-                                        type="text"
-                                        id="apellido"
-                                        name="apellido"
-                                        placeholder="Tu apellido"
-                                        required
-                                        autocomplete="family-name"
-                                    >
+                                    <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required autocomplete="family-name">
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="email">Email <span aria-hidden="true">*</span></label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="tu@email.com"
-                                    required
-                                    autocomplete="email"
-                                >
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required autocomplete="email">
                             </div>
-
                             <div class="form-group">
                                 <label for="telefono">Teléfono</label>
-                                <input
-                                    type="tel"
-                                    id="telefono"
-                                    name="telefono"
-                                    placeholder="+54 351 000-0000"
-                                    autocomplete="tel"
-                                >
+                                <input type="tel" id="telefono" name="telefono" placeholder="+54 351 000-0000" autocomplete="tel">
                             </div>
-
                             <div class="form-group">
                                 <label for="servicio">Servicio de interés <span aria-hidden="true">*</span></label>
                                 <select id="servicio" name="servicio" required>
@@ -201,7 +156,6 @@
                                     <option value="consulta">Consulta general</option>
                                 </select>
                             </div>
-
                             <div class="form-group">
                                 <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
                                 <textarea
@@ -212,12 +166,10 @@
                                     rows="5"
                                 ></textarea>
                             </div>
-
                             <button type="submit" class="btn-submit">
                                 Enviar consulta
                                 <i class="bi bi-arrow-right" aria-hidden="true"></i>
                             </button>
-
                             <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
                                 <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
                                 ¡Mensaje enviado! Te contactamos en menos de 24 horas.
@@ -229,9 +181,7 @@
                 </div>
             </div>
         </section>
-
     </main>
-
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -280,11 +230,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 DomoticAR &middot; Todos los derechos reservados</p>
+                <p>&copy; 2026 DomoticAR &middot; Todos los derechos reservados</p>
             </div>
         </div>
     </footer>
-
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>AOS.init({ duration: 600, once: true });</script>
@@ -300,6 +250,5 @@
             }
         });
     </script>
-
 </body>
 </html>
