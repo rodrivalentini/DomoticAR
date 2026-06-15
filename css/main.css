@@ -799,11 +799,22 @@ a:hover {
   }
 }
 @media (min-width: 992px) {
+  .navbar .navbar-collapse {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    background-color: transparent;
+    padding: 0;
+    border-top: none;
+    border-radius: 0;
+  }
   .navbar .nav-link {
     font-size: 0.9rem;
   }
   .proj-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .site-footer .footer-grid {
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -1038,12 +1049,12 @@ a:hover {
 }
 .tech-tabs .nav-link {
   font-family: "Poppins", sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #94A3B8;
   border: 1px solid transparent;
   border-radius: 8px 8px 0 0;
-  padding: 0.625rem 1.25rem;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
   gap: 6px;

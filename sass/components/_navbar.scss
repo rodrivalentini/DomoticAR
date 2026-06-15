@@ -107,10 +107,8 @@
     padding: 1rem;
     border-top: 1px solid rgba($accent-blue, 0.15);
     border-radius: 0 0 12px 12px;
-
-    // ← estos son los fixes clave
     position: absolute;
-    top: 64px;          // altura del navbar
+    top: 64px;
     left: 0;
     right: 0;
     width: 100%;

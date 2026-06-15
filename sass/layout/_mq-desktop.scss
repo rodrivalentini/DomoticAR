@@ -1,16 +1,27 @@
 @use '../utilities/variables' as *;
-@use '../pages/proyectos' as *;
 
 @media (min-width: 992px) {
 
   .navbar {
+    .navbar-collapse {
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+      border-top: none;
+      border-radius: 0;
+    }
+
     .nav-link {
       font-size: 0.9rem;
     }
   }
 
   .proj-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .site-footer {
