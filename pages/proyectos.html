@@ -146,23 +146,28 @@
         </div>
       </article>
       <!-- Proyecto 5 -->
-      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto5" data-aos="fade-up" data-aos-delay="0">
-        <div class="proj-img-wrapper">
-          <img src="../assets/img/empresa.png" alt="Automatización industrial en Rosario por DomoticAR" class="proj-img" loading="lazy" width="600" height="400"/>
-          <div class="proj-img-overlay"><span>Ver detalle <i class="bi bi-arrow-right"></i></span></div>
-        </div>
-        <div class="proj-body">
-          <div class="proj-tags">
-            <span class="proj-tag">Industrial</span>
-            <span class="proj-tag">Accesos</span>
+      <article class="proj-card" data-bs-toggle="modal" data-bs-target="#modalProyecto5" data-aos="fade-up" data-aos-delay="100">
+          <div class="proj-img-wrapper">
+              <img src="../assets/img/cabana.png" alt="Casa de veraneo en Villa Carlos Paz automatizada por DomoticAR" class="proj-img" loading="lazy"/>
+              <div class="proj-img-overlay">
+                  <span>Ver detalle <i class="bi bi-arrow-right"></i></span>
+              </div>
           </div>
-          <h2 class="proj-title">Planta industrial — Rosario</h2>
-          <p class="proj-desc">Control de accesos, monitoreo de consumo energético y automatización de sectores productivos en tiempo real.</p>
-          <div class="proj-meta">
-            <span class="proj-location"><i class="bi bi-geo-alt" aria-hidden="true"></i>Rosario, AR</span>
-            <span class="proj-year">2026</span>
+          <div class="proj-body">
+              <div class="proj-tags">
+                  <span class="proj-tag">Control remoto</span>
+                  <span class="proj-tag">Seguridad</span>
+              </div>
+              <h2 class="proj-title">Casa de veraneo — Villa Carlos Paz</h2>
+              <p class="proj-desc">Automatización remota de cabaña con control de accesos, cámaras, riego inteligente y climatización desde cualquier lugar del mundo.</p>
+              <div class="proj-meta">
+                  <span class="proj-location">
+                      <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                      Villa Carlos Paz, AR
+                  </span>
+                  <span class="proj-year">2025</span>
+              </div>
           </div>
-        </div>
       </article>
     </div>
   </div>
@@ -345,49 +350,57 @@
           </div>
         </div>
       </div>
-            <!-- MODAL PROYECTO 5 -->
+      <!-- MODAL PROYECTO 5 -->
       <div class="modal fade" id="modalProyecto5" tabindex="-1" aria-labelledby="modalProyecto5Label" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content proj-modal-content">
-            <div class="modal-header proj-modal-header">
-              <h2 class="modal-title proj-modal-title" id="modalProyecto5Label">Planta industrial — Rosario</h2>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-            </div>
-            <div class="modal-body proj-modal-body">
-              <img src="../assets/img/empresa.png" alt="Planta industrial Rosario automatización" class="proj-modal-img" loading="lazy"/>
-              <div class="proj-modal-tags">
-                <span class="proj-tag">Industrial</span>
-                <span class="proj-tag">Accesos</span>
-                <span class="proj-tag">Energía</span>
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content proj-modal-content">
+                  <div class="modal-header proj-modal-header">
+                      <h2 class="modal-title proj-modal-title" id="modalProyecto5Label">
+                          Casa de veraneo — Villa Carlos Paz
+                      </h2>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                  </div>
+                  <div class="modal-body proj-modal-body">
+                      <img src="../assets/img/cabana.png" alt="Casa de veraneo en Villa Carlos Paz automatizada por DomoticAR" class="proj-modal-img" loading="lazy">
+                      <div class="proj-modal-tags">
+                          <span class="proj-tag">Control remoto</span>
+                          <span class="proj-tag">Seguridad</span>
+                          <span class="proj-tag">Riego inteligente</span>
+                      </div>
+                      <p class="proj-modal-desc">
+                          Automatización completa de una cabaña en las sierras de Villa Carlos Paz.
+                          El propietario puede controlar y monitorear toda la propiedad desde su celular,
+                          sin importar dónde se encuentre. El sistema incluye cerraduras inteligentes con
+                          código temporal para huéspedes, cámaras IP con visión nocturna, riego automático
+                          por zonas con sensor de humedad, y climatización programable que se activa horas
+                          antes de la llegada. Las alertas de movimiento y apertura de puertas llegan en
+                          tiempo real vía notificación push.
+                      </p>
+                      <div class="proj-modal-details">
+                          <div class="proj-modal-detail">
+                              <span class="detail-label">Ubicación</span>
+                              <span class="detail-value">Villa Carlos Paz, Córdoba</span>
+                          </div>
+                          <div class="proj-modal-detail">
+                              <span class="detail-label">Año</span>
+                              <span class="detail-value">2025</span>
+                          </div>
+                          <div class="proj-modal-detail">
+                              <span class="detail-label">Tecnología</span>
+                              <span class="detail-value">WiFi · Zigbee · Home Assistant</span>
+                          </div>
+                          <div class="proj-modal-detail">
+                              <span class="detail-label">Superficie</span>
+                              <span class="detail-value">120 m²</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer proj-modal-footer">
+                      <button type="button" class="btn btn-secondary-custom" data-bs-dismiss="modal">Cerrar</button>
+                      <a href="contacto.html" class="btn btn-primary-custom">Quiero algo similar</a>
+                  </div>
               </div>
-              <p class="proj-modal-desc">
-                Implementación de sistema de control de accesos biométrico, monitoreo de consumo energético por sector y automatización de iluminación en zonas productivas. Integración con sistema ERP existente para reporting centralizado.
-              </p>
-              <div class="proj-modal-details">
-                <div class="proj-modal-detail">
-                  <span class="detail-label">Ubicación</span>
-                  <span class="detail-value">Rosario, Argentina</span>
-                </div>
-                <div class="proj-modal-detail">
-                  <span class="detail-label">Año</span>
-                  <span class="detail-value">2025</span>
-                </div>
-                <div class="proj-modal-detail">
-                  <span class="detail-label">Tecnología</span>
-                  <span class="detail-value">Modbus · BACnet</span>
-                </div>
-                <div class="proj-modal-detail">
-                  <span class="detail-label">Superficie</span>
-                  <span class="detail-value">5.000 m²</span>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer proj-modal-footer">
-              <button type="button" class="btn btn-secondary-custom" data-bs-dismiss="modal">Cerrar</button>
-              <a href="contacto.html" class="btn btn-primary-custom">Quiero algo similar</a>
-            </div>
           </div>
-        </div>
       </div>
     </main>
     <footer class="site-footer">
