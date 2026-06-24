@@ -1,0 +1,37 @@
+// abstracts/_extends.scss
+@use 'variables' as *;
+
+// Base para cards
+%card-base {
+  background: $bg-secondary;
+  border: 1px solid rgba($accent-blue, 0.15);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba($accent-cyan, 0.15);
+  }
+}
+
+// Base para badges / etiquetas
+%badge-base {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 14px;
+}
+
+// Base para secciones
+%section-padding {
+  padding: $spacing-xl 0;
+}
+
+// Flex centrado
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

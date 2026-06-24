@@ -1,3 +1,24 @@
+.sol-card, .why-section .why-card {
+  background: #161B27;
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sol-card:hover, .why-section .why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(6, 182, 212, 0.15);
+}
+
+.contact-section, .sol-section, .why-section, .proj-section {
+  padding: 64px 0;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -279,21 +300,35 @@ a:hover {
   color: #94A3B8;
   margin: 0;
 }
-.site-footer .footer-bottom .footer-status {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  color: #22C55E;
-}
-.site-footer .footer-bottom .status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #22C55E;
-  animation: pulse 2s infinite;
-}
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes pulse {
   0%, 100% {
     opacity: 1;
@@ -332,26 +367,11 @@ a:hover {
     gap: 4rem;
   }
 }
-.hero .hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 100px;
-  padding: 6px 16px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: white;
-  margin-bottom: 1.5rem;
+.hero .hero-content {
+  animation: fadeInUp 0.8s ease both;
 }
-.hero .hero-badge .badge-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #22C55E;
-  animation: pulse 2s infinite;
-  flex-shrink: 0;
+.hero .hero-visual {
+  animation: fadeInRight 0.8s ease 0.3s both;
 }
 .hero .hero-title {
   font-size: clamp(3rem, 8vw, 6rem);
@@ -359,6 +379,7 @@ a:hover {
   color: white;
   line-height: 1.1;
   margin-bottom: 1.25rem;
+  animation: fadeInUp 0.8s ease 0.1s both;
 }
 .hero .hero-title .hero-title-alt {
   display: block;
@@ -503,14 +524,6 @@ a:hover {
   color: #22C55E;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.4;
-  }
-}
 .device-card-top {
   display: flex;
   align-items: center;
@@ -825,6 +838,86 @@ a:hover {
     grid-column: auto;
   }
 }
+.why-section .why-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.why-section .why-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #06B6D4;
+  margin-bottom: 0.75rem;
+}
+.why-section .why-title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: #F1F5F9;
+  margin-bottom: 1rem;
+}
+.why-section .why-desc {
+  color: #94A3B8;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.why-section .why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+@media (min-width: 768px) {
+  .why-section .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .why-section .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.why-section .why-card {
+  padding: 1.75rem;
+}
+.why-section .why-card .why-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #06B6D4;
+  margin-bottom: 1.25rem;
+  transition: background 0.3s ease;
+}
+.why-section .why-card .why-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin-bottom: 0.5rem;
+}
+.why-section .why-card .why-card-desc {
+  font-size: 0.875rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin: 0;
+}
+.why-section .why-card:hover .why-card-icon {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.sol-card {
+  padding: 1.75rem;
+  height: 100%;
+}
+
 .page-hero {
   background: linear-gradient(135deg, #0EA5E9 0%, #06B6D4 50%, #3B82F6 100%);
   padding: 80px 0;

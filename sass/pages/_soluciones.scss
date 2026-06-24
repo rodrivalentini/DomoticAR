@@ -1,6 +1,19 @@
 // pages/_soluciones.scss
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+@use '../utilities/extends' as *;
+
+.sol-section {
+  @extend %section-padding;  
+}
+
+.sol-card {
+  @extend %card-base;  // ← usá el extend
+  // el resto de estilos propios de la card van acá
+  padding: 1.75rem;
+  height: 100%;
+  // borrá background, border, border-radius y transition porque ya los hereda del extend
+}
 
 // Page hero
 .page-hero {

@@ -1,5 +1,10 @@
 @use 'sass:color';
 @use '../utilities/variables' as *;
+@use '../utilities/extends' as *;
+
+.social-link {
+  @extend %flex-center;
+}
 
 .site-footer {
   background-color: $bg-primary;
@@ -161,22 +166,6 @@
       font-size: 0.8rem;
       color: $text-secondary;
       margin: 0;
-    }
-
-    .footer-status {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      color: $success;
-    }
-
-    .status-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: $success;
-      animation: pulse 2s infinite;
     }
   }
 }

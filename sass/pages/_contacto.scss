@@ -1,6 +1,11 @@
 // pages/_contacto.scss
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use '../utilities/extends' as *;
+
+.contact-section {
+  @extend %section-padding;
+}
 
 .contact-section {
   padding: $spacing-xl 0;

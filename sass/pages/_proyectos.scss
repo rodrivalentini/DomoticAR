@@ -2,6 +2,11 @@
 @use 'sass:color';
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+@use '../utilities/extends' as *;
+
+.proj-section {
+  @extend %section-padding;
+}
 
 .proj-section {
   padding: $spacing-xl 0;

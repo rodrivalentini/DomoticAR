@@ -2,6 +2,34 @@
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
 
+// Animaciones
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
 .hero {
   background: $gradient-hero;
   min-height: 88vh;
@@ -34,28 +62,14 @@
     }
   }
 
-  // Badge superior
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 100px;
-    padding: 6px 16px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 1.5rem;
+  // Contenido izquierdo
+  .hero-content {
+    animation: fadeInUp 0.8s ease both;
+  }
 
-    .badge-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: $success;
-      animation: pulse 2s infinite;
-      flex-shrink: 0;
-    }
+  // Visual derecho
+  .hero-visual {
+    animation: fadeInRight 0.8s ease 0.3s both;
   }
 
   // Título
@@ -65,6 +79,7 @@
     color: white;
     line-height: 1.1;
     margin-bottom: 1.25rem;
+    animation: fadeInUp 0.8s ease 0.1s both;
 
     .hero-title-alt {
       display: block;
@@ -233,11 +248,6 @@
       }
     }
   }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0.4; }
 }
 
 .device-card-top {
